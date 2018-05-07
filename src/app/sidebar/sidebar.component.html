@@ -1,0 +1,11 @@
+<div class="private-card" *ngIf="this.authenticationService.isLoggedIn()">
+    <span class="sidebar-title">
+        Bem vindo, {{  this.authenticationService.authenticatedUser.userInfo.name.firstName + " " + this.authenticationService.authenticatedUser.userInfo.name.lastName  }}!
+        </span>
+    <span class="sidebar-body">
+        Seu saldo é de {{ this.authenticationService.authenticatedUser.userInfo.credit }} créditos.
+    </span>
+</div>
+<div class="public-card" *ngIf="!this.authenticationService.isLoggedIn()">
+    Você não está conectado. 
+</div>

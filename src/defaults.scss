@@ -1,0 +1,47 @@
+h1, h2, h3, h4, h5, h6 { font-size: 2em; }
+
+$white: #fff;
+$yellow: #FFEB3B;
+$medium-blue: #42A5F5;
+$dark-blue: #1A237E;
+$medium-grey: #E0E0E0;
+$light-grey: #fafafa;
+$red: #E53935;
+$black: #000000;
+$body-grey: #eeeeee;
+
+
+button {
+    border: none;
+    color: $white;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 12px;
+    background: $medium-blue;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:disabled {
+    background: $medium-grey;
+    color: $white;
+}
+
+input {
+    padding: 10px;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}

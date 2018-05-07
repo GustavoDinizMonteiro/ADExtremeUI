@@ -1,0 +1,12 @@
+<div class="card-group">
+    <div class="card" *ngIf="advertisement">
+      <div class="card-block">
+        <h4 class="card-title">{{ advertisement.title }}</h4>
+        <p class="card-text">Publicado em {{ advertisement.publicationDate | date }}</p>
+        <p class="card-text">Expira em {{ advertisement.expirationDate | date }}</p>
+        <p class="card-text">{{ advertisement.user.name.firstName + ' ' + advertisement.user.name.lastName }}</p>
+        <div class="price">R$ {{ advertisement.value }},00  <button (click)="buyAd(advertisement.id)" type="submit" class="btn btn-primary center">Comprar</button></div>
+      </div>
+    </div>
+
+  </div>
